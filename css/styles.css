@@ -1,0 +1,76 @@
+body {
+  background-color: #ffffff;
+  color: #212121;
+}
+ul {
+  list-style: none;
+}
+
+/* Палитра
+color: #2196f3; -акцент 
+color: #000000; - текст лого
+color: #212121; - текст нав,заголовки секций- основной цвет текста
+color: #757575; - текст контакты,текст секций - вторичный цвет текста
+color: #FFFFFF; - текст героя, главный бэк 
+color: #2F303A; - бэк героя
+color: rgba(255, 255, 255, 0.6); -контакты футер */
+
+======/* Логотип */====== 
+.logo {
+  color: #000000;
+}
+
+.accent {
+  color: #2196f3;
+}
+
+======/* Постраничная навигация */======
+.nav-link {
+  color: #000;
+}
+.nav-link:hover,
+.nav-link:focus,
+.nav-link:active {
+  color: #2196f3;
+}
+
+/* Контакты */
+.page-header > a {
+  color: #757575;
+}
+.contact:hover,
+.contact:focus,
+.contact:active {
+  color: #2196f3;
+}
+
+/* Герой */
+.hero {
+}
+.hero-title {
+  background-color: #2f303a;
+  color: #ffffff;
+}
+.hero-btn {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+
+/* Секции */
+.section-title .section-subtitle {
+  color: #212121;
+}
+.section-text {
+  color: #757575;
+}
+
+/* FOOTER */
+.address-link:hover,
+.address-link:focus,
+.address-link:active,
+.address-link:visited {
+  color: #ffffff;
+}
+.contacts {
+  color: rgba(255, 255, 255, 0.6);
+}
