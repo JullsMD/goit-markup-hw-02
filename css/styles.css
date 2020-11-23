@@ -1,11 +1,3 @@
-body {
-  background-color: #ffffff;
-  color: #212121;
-}
-ul {
-  list-style: none;
-}
-
 /* Палитра
 color: #2196f3; -акцент 
 color: #000000; - текст лого
@@ -15,18 +7,29 @@ color: #FFFFFF; - текст героя, главный бэк
 color: #2F303A; - бэк героя
 color: rgba(255, 255, 255, 0.6); -контакты футер */
 
-======/* Логотип */====== 
-.logo {
-  color: #000000;
+body {
+  background-color: #ffffff;
+  color: #212121;
 }
 
+/* HEADER */
+
+/* Логотип-1 */
+.logo {
+  color: #000000;
+  text-decoration: none;
+}
 .accent {
   color: #2196f3;
 }
 
-======/* Постраничная навигация */======
+/* Постраничная навигация */
+.nav-list {
+  list-style: none;
+}
 .nav-link {
   color: #000;
+  text-decoration: none;
 }
 .nav-link:hover,
 .nav-link:focus,
@@ -35,8 +38,9 @@ color: rgba(255, 255, 255, 0.6); -контакты футер */
 }
 
 /* Контакты */
-.page-header > a {
+.contact {
   color: #757575;
+  text-decoration: none;
 }
 .contact:hover,
 .contact:focus,
@@ -44,13 +48,15 @@ color: rgba(255, 255, 255, 0.6); -контакты футер */
   color: #2196f3;
 }
 
+/* MAIN */
+
 /* Герой */
-.hero {
-}
 .hero-title {
+  /* временный бэк */
   background-color: #2f303a;
   color: #ffffff;
 }
+
 .hero-btn {
   background-color: #2196f3;
   color: #ffffff;
@@ -60,17 +66,43 @@ color: rgba(255, 255, 255, 0.6); -контакты футер */
 .section-title .section-subtitle {
   color: #212121;
 }
+
+.section-list {
+  list-style: none;
+}
+
 .section-text {
   color: #757575;
 }
 
 /* FOOTER */
-.address-link:hover,
-.address-link:focus,
-.address-link:active,
-.address-link:visited {
+/* Логотип-2 */
+.studio {
+  /* временный бэк */
+  background-color: #2f303a;
   color: #ffffff;
 }
-.contacts {
+/* Адресс */
+.address-link: {
+  /* Временный бэк */
+  background-color: #2f303a;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.address-link.map {
+  /* Временный бэк */
+  background-color: #2f303a;
+  color: #ffffff;
+  text-decoration: none;
+}
+/* Contacts */
+.contacts-list {
+  list-style: none;
+}
+.contacts-link {
+  /* Временный бэк */
+  background-color: #2f303a;
   color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
