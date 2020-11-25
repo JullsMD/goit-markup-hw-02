@@ -8,8 +8,22 @@ color: #2F303A; - бэк героя
 color: rgba(255, 255, 255, 0.6); -контакты футер */
 
 body {
-  background-color: #ffffff;
-  color: #212121;
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+}
+
+.list {
+  list-style: none;
+}
+
+:root {
+  --accent-color: #2196f3;
+  --logo-text-color: #000000;
+  --primary-text-color: #212121;
+  --secondary-text-color: #757575;
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #2f303a;
+  --footer-text-color: rgba(255, 255, 255, 0.6);
 }
 
 .visually-hidden {
@@ -29,36 +43,33 @@ body {
 
 /* Логотип-1 */
 .logo {
-  color: #000000;
+  color: var(--logo-text-color);
   text-decoration: none;
 }
 .accent {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 /* Постраничная навигация */
-.nav-list {
-  list-style: none;
+.link:visited {
+  color: var(--primary-text-color);
 }
-.nav-link {
-  color: #000;
+.link {
   text-decoration: none;
 }
-.nav-link:hover,
-.nav-link:focus,
-.nav-link:active {
-  color: #2196f3;
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
 }
 
 /* Контакты */
 .contact {
-  color: #757575;
+  color: var(--secondary-text-color);
   text-decoration: none;
 }
 .contact:hover,
-.contact:focus,
-.contact:active {
-  color: #2196f3;
+.contact:focus {
+  color: var(--accent-color);
 }
 
 /* MAIN */
@@ -66,57 +77,52 @@ body {
 /* Герой */
 .hero-title {
   /* временный бэк */
-  background-color: #2f303a;
-  color: #ffffff;
+  background-color: var(--secondary-background-color);
+  color: var(--primary-background-color);
 }
 
 .hero-btn {
-  background-color: #2196f3;
-  color: #ffffff;
+  background-color: var(--accent-color);
+  color: var(--primary-background-color);
   text-decoration: none;
 }
 
 /* Секции */
-.section-title .section-subtitle {
-  color: #212121;
+.features-list .text {
+  color: var(--secondary-text-color);
 }
-
-.section-list {
-  list-style: none;
-}
-
-.section-text {
-  color: #757575;
+.team-list .text {
+  color: var(--secondary-text-color);
 }
 
 /* FOOTER */
 /* Логотип-2 */
 .studio {
   /* временный бэк */
-  background-color: #2f303a;
-  color: #ffffff;
+  background-color: var(--secondary-background-color);
+  color: var(--primary-background-color);
 }
 /* Адресс */
 .address-link {
   /* Временный бэк */
-  background-color: #2f303a;
-  color: #ffffff;
+  background-color: var(--secondary-background-color);
+  color: var(--primary-background-color);
   text-decoration: none;
 }
 
 .address-link.map {
   /* Временный бэк */
-  background-color: #2f303a;
-  color: #ffffff;
+  background-color: var(--secondary-background-color);
+  color: var(--primary-background-color);
   text-decoration: none;
 }
+
 /* Contacts */
 .contacts-list {
-  list-style: none;
 }
 .contacts-link {
   /* Временный бэк */
-  background-color: #2f303a;
-  color: rgba(255, 255, 255, 0.6);
+  background-color: var(--secondary-background-color);
+  color: var(--footer-text-color);
   text-decoration: none;
 }
