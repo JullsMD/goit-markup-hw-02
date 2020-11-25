@@ -6,8 +6,8 @@ color: #757575; - текст контакты,текст секций - втор
 color: #FFFFFF; - текст героя, главный бэк 
 color: #2F303A; - бэк героя
 color: rgba(255, 255, 255, 0.6); -контакты футер */
-
-body {
+color: #f5f4fa;
+- бэк неактивной кнопки фильтра в портфолио body {
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
 }
@@ -24,6 +24,7 @@ body {
   --primary-background-color: #ffffff;
   --secondary-background-color: #2f303a;
   --footer-text-color: rgba(255, 255, 255, 0.6);
+  --background-button: #f5f4fa;
 }
 
 .visually-hidden {
@@ -59,6 +60,9 @@ body {
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
   color: var(--accent-color);
 }
 
@@ -125,4 +129,27 @@ body {
   background-color: var(--secondary-background-color);
   color: var(--footer-text-color);
   text-decoration: none;
+}
+
+/* ПОРТФОЛИО */
+
+/* Фильтр */
+.filter-btn {
+  background-color: var(--background-button);
+}
+.filter-btn:hover,
+.filter-btn:focus,
+.filter-btn:active {
+  background-color: var(--accent-color);
+  color: var(--primary-background-color);
+}
+/* Карточки */
+.cards-text {
+  color: var(--secondary-text-color);
+}
+.cards-about {
+  background-color: var(--accent-color);
+  color: var(--primary-background-color);
+}
+.cards-title {
 }
