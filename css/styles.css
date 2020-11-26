@@ -61,6 +61,9 @@ body {
 }
 
 /* Постраничная навигация */
+.link {
+  color: var(--primary-text-color);
+}
 .link,
 .contact {
   font-weight: 500;
