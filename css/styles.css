@@ -91,7 +91,9 @@ body {
 }
 
 /* MAIN */
-
+.hero {
+  background-color: var(--secondary-background-color);
+}
 /* Герой */
 .hero-title {
   font-weight: 900;
@@ -101,8 +103,6 @@ body {
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
-  /* временный бэк */
-  background-color: var(--secondary-background-color);
   color: var(--primary-background-color);
 }
 
@@ -115,7 +115,6 @@ body {
 
   background-color: var(--accent-color);
   color: var(--primary-background-color);
-  text-decoration: none;
 }
 
 /* Секции */
@@ -162,9 +161,11 @@ body {
 
 /* FOOTER */
 /* Логотип-2 */
-.studio {
-  /* временный бэк */
+.page-footer {
   background-color: var(--secondary-background-color);
+}
+
+.studio {
   color: var(--primary-background-color);
 }
 /* Адресс */
