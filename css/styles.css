@@ -21,7 +21,6 @@ color: #f5f4fa; - бэк неактивной кнопки фильтра в п�
 
 body {
   font-family: Roboto, sans-serif;
-  font-style: normal;
   letter-spacing: 0.03em;
 
   background-color: var(--primary-background-color);
@@ -62,14 +61,11 @@ body {
 }
 
 /* Постраничная навигация */
-.link:visited {
-  color: var(--primary-text-color);
-}
-.link {
-  font-family: Roboto, sans-serif;
+.link,
+.contact {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
   letter-spacing: 0.02em;
 
   text-decoration: none;
@@ -78,20 +74,16 @@ body {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+.link:visited {
+  color: var(--primary-text-color);
+}
 .site-nav .link.current {
   color: var(--accent-color);
 }
 
 /* Контакты */
 .contact {
-  font-family: Roboto, sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-
   color: var(--secondary-text-color);
-  text-decoration: none;
 }
 .contact:hover,
 .contact:focus {
@@ -102,10 +94,9 @@ body {
 
 /* Герой */
 .hero-title {
-  font-family: Roboto, sans-serif;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.36;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -116,12 +107,9 @@ body {
 }
 
 .hero-btn {
-  font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 16px;
-  line-height: 1.9;
-  display: flex;
-  align-items: center;
+  line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
 
@@ -131,44 +119,42 @@ body {
 }
 
 /* Секции */
+
+/* Особенности */
 .features-title {
-  font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 14px;
-  line-height: 1.1;
+  line-height: 1.14;
   text-transform: uppercase;
 }
 
 .features-text {
-  font-family: Roboto, sans-serif;
-  font-weight: normal;
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.71;
   color: var(--secondary-text-color);
 }
 
+/* Чем мы занимаемся */
 .wwd-title,
 .team-title {
-  font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 36px;
-  line-height: 1.1;
+  line-height: 1.17;
   text-align: center;
 }
 
+/* Team */
+
 .team-subtitle {
-  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.19;
   text-align: center;
 }
 
 .team-text {
-  font-family: Roboto, sans-serif;
-  font-weight: normal;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.19;
   text-align: center;
 
   color: var(--secondary-text-color);
@@ -182,13 +168,13 @@ body {
   color: var(--primary-background-color);
 }
 /* Адресс */
-.address-link {
-  font-family: Roboto, sans-serif;
+.address {
   font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
+}
 
+.address-link {
   /* Временный бэк */
   background-color: var(--secondary-background-color);
   color: var(--primary-background-color);
@@ -196,27 +182,27 @@ body {
 }
 
 .contacts-link {
-  -family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.7;
-
   /* Временный бэк */
   background-color: var(--secondary-background-color);
   color: var(--footer-text-color);
   text-decoration: none;
 }
 
+/*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */
+/*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */
+/*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */
+/*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */
+/*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */ /*  */
+
 /* ПОРТФОЛИО */
 
 /* Фильтр */
 .filter-btn {
-  font-family: Roboto, sans-serif;
+  font-family: inherit;
+  font-style: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
-  text-align: center;
+  line-height: 1.63;
 
   background-color: var(--background-button);
 }
@@ -228,23 +214,18 @@ body {
 }
 /* Карточки */
 .cards-title {
-  font-family: Roboto, sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .cards-text {
-  font-family: Roboto, sans-serif;
-  font-weight: normal;
   font-size: 16px;
-  line-height: 1.9;
+  line-height: 1.88;
 
   color: var(--secondary-text-color);
 }
 .cards-about {
-  font-family: Roboto, sans-serif;
-  font-weight: normal;
   font-size: 18px;
   line-height: 1.55;
 
